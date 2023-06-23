@@ -26,6 +26,10 @@ h3 {
     @apply text-sm tracking-widest uppercase;
 }
 
+h4 {
+    @apply tracking-wider font-black;
+}
+
 a {
     @apply underline;
 }
@@ -48,6 +52,28 @@ a {
 .section {
     @apply p-2;
     border: 1px dashed palegoldenrod;
+}
+
+.job-header {
+    @apply flex justify-between;
+}
+
+.job-header > p {
+    @apply text-sm;
+}
+
+.job-header + ul {
+    @apply pl-4;
+}
+
+.job-project-list {
+    @apply flex flex-wrap gap-x-2;
+    @apply text-sm;
+    @apply pl-4;
+}
+
+.job-project-list > li + li {
+    @apply before:content-['·'] flex gap-x-2
 }
 
 #title { grid-area: title; }
