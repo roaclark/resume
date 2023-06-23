@@ -1,0 +1,12 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "author": "Rachel Rosalia <rachel@rosalia.me>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "tailwindcss -i ./styles.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
