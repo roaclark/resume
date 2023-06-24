@@ -41,11 +41,11 @@ a {
     display: grid;
     grid-gap: 0.05in;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
         "title contact"
         "pitch contact"
-        "experience facts"
+        "facts facts"
         "experience projects"
         "education projects";
 }
@@ -72,13 +72,13 @@ a {
 }
 
 .job-project-list {
-    /* @apply flex flex-wrap gap-x-2; */
+    @apply flex flex-wrap gap-x-2;
     @apply text-sm;
-    @apply pl-4 ml-2 mt-1 border-l;
+    @apply pl-4 ml-2;
 }
 
-.job-project-list > li + li {
-    /* @apply before:content-['·'] flex gap-x-2 */
+.job-project-list > :not(:last-child) {
+    @apply after:content-['_|'] flex gap-x-2
 }
 
 .project-list {
