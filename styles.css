@@ -60,14 +60,14 @@ a {
 }
 
 .job-header {
-    @apply flex justify-between;
+    @apply flex justify-between items-end;
 }
 
 .job-header > p {
     @apply text-sm;
 }
 
-.job-header + ul {
+.job-roles {
     @apply pl-4;
 }
 
