@@ -116,6 +116,15 @@ a {
 #contact {
     grid-area: contact;
     @apply text-sm;
+    @apply border rounded-xl m-auto p-6 border-slate-300;
+}
+
+#contact > h2 {
+    @apply border-0;
+}
+
+#contact > ul {
+    @apply flex flex-col gap-1;
 }
 
 #experience { grid-area: experience; }
