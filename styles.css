@@ -81,11 +81,24 @@ a {
     /* @apply before:content-['·'] flex gap-x-2 */
 }
 
-.skills {
-    @apply flex flex-wrap gap-1;
+.project-list {
+    @apply flex flex-col gap-2;
 }
 
-.skills > li {
+.project-name {
+
+}
+
+.project-link {
+    @apply text-sm;
+}
+
+.project-skills {
+    @apply flex flex-wrap gap-1;
+    @apply pt-1 pb-1;
+}
+
+.project-skills > li {
     @apply rounded-full text-xs px-1;
     @apply border bg-slate-200;
 }
