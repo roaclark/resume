@@ -55,6 +55,10 @@ a {
     /* border: 1px dashed palegoldenrod; */
 }
 
+.job-list {
+    @apply flex flex-col gap-2;
+}
+
 .job-header {
     @apply flex justify-between;
 }
@@ -70,15 +74,31 @@ a {
 .job-project-list {
     /* @apply flex flex-wrap gap-x-2; */
     @apply text-sm;
-    @apply pl-4;
+    @apply pl-4 ml-2 mt-1 border-l;
 }
 
 .job-project-list > li + li {
     /* @apply before:content-['·'] flex gap-x-2 */
 }
 
-#title { grid-area: title; }
-#pitch { grid-area: pitch; }
+.skills {
+    @apply flex flex-wrap gap-1;
+}
+
+.skills > li {
+    @apply rounded-full text-xs px-1;
+    @apply border bg-slate-200;
+}
+
+#title {
+    grid-area: title;
+    @apply pb-0;
+}
+
+#pitch {
+    grid-area: pitch;
+    @apply pt-0;
+}
 
 #contact {
     grid-area: contact;
