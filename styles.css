@@ -6,7 +6,7 @@ body {
     width: 8.5in;
     height: 11in;
     margin: auto;
-    padding: 0.5in 0.5in;
+    padding: 0.6in 0.6in;
     border: 1px solid black;
     /* font-family: 'Glegoo', serif; */
     font-family: 'Goudy Bookletter 1911', serif;
@@ -41,7 +41,6 @@ a {
     display: grid;
     grid-gap: 0.05in;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
         "title contact"
         "pitch contact"
@@ -68,7 +67,7 @@ a {
 }
 
 .job-roles {
-    @apply pl-4;
+    @apply px-4;
 }
 
 .job-project-list {
@@ -129,5 +128,5 @@ a {
 
 #experience { grid-area: experience; }
 #education { grid-area: education; }
-#facts { grid-area: facts; }
+#facts { grid-area: facts; display: none; }
 #projects { grid-area: projects; }
